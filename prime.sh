@@ -1,7 +1,7 @@
 #!/bin/bash
-for num in {2..100};
+for num in {2..100}
 do 
-    for (i=2; i<num; i++);
+    for (i=2; i<num; i++)
     do
         if (num%i==0)
         then
