@@ -10,4 +10,4 @@ do
     then
         echo "$PARTITION_NAME is greater then $Disk_THRESHOLD, current value is $USAGE, Please check"
     fi
-done<<<$DISK_USAGE
+done <<< $DISK_USAGE
