@@ -7,7 +7,7 @@ else
     echo "$folder is does not exist"
     exit 1
 fi
-files=$(find $folder -name "*.log -mtime +14)
+files=$(find $folder -name "*.log" -mtime +14)
     echo "files are : $files"
     while IFS= read -r file
     do
