@@ -7,7 +7,7 @@ do
     partition_name=$(echo $line | grep xfs | awk -F " " '{print $NF}')
     if [ $usage -ge $disk_treshold ]
     then
-        echo "$partition is used more than the $disk_threshold, so, current usage is $usage, please check"
+        echo "$partition_name is used more than the $disk_threshold, so, current usage is $usage, please check"
 
     fi
 done <<<$disk_usage
